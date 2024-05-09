@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d69fb28507.js" crossorigin="anonymous"></script>
+
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart_styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo_input">
+            <a href="./index.html" class="logo-box">
+                <img src="img/logo.png" >
+            </a>
+            <div class="input_search">
+                <input type="text" placeholder="Tìm kiếm theo tên">
+                <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div class="cart_product_list">
+            <a href="#" class="cart">
+                <img src="img/icon-gio-hang.jpg" />
+            </a>
+            <span class="number">
+                0
+            </span>
+        </div>
+    </header>
+    <main>
+        <section class="main-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Hình ảnh</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Sản Phẩm A</td>
+                        <td><img src="img/1. Dell Gaming G15.png" /></td>
+                        <td>100 $</td>
+                        <td>
+                            <div class="quantity">
+                                <button class="down-number">-</button>
+                                <input type="text" class="input-quantity" value="" >
+                                <button class="up-number">+</button>
+                            </div>
+                        </td>
+                        <td class="total-money">1000 $</td>
+                        <td class="delete">
+                            <button>X</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="payment">
+                <strong>Tiền thanh toán : 0 $</strong>
+                <button>Thanh Toán</button>
+            </div>
+        </section>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>

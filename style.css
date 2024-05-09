@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    position: relative;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.block {
+    display: flex;
+    padding-left: 20px;
+    position: relative;
+    box-shadow: 0px 2px 7px 0px rgb(0 0 0 / 33%);
+}
+
+.parent {
+    position: relative;
+}
+
+.btn {
+    cursor: pointer;
+    color: #0671ec;
+}
+
+.input, .btn {
+    position: absolute;
+    bottom: 7px;
+    left: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 7px 10px;
+    width: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.parent.active .input {
+    width: 300px;
+}
+
+.parent.active .btn {
+    transform: translateX(250px);
+}
+
+.gio-hang {
+    cursor: pointer;
+    position: absolute;
+    bottom: 7px;
+    left: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.parent.active .gio-hang {
+    transform: translateX(255px);
+}
+
+.number {
+    position: absolute;
+    top: -13px;
+    right: -5px;
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 3px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.product-section {
+    margin: 100px 0px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+li img {
+    width: 230px;
+    height: 145px;
+    transition: 0.3s;
+}
+
+li img:hover {
+    transform: translateY(-7px);
+}
+
+.add-to-cart {
+    background-color: #0671ec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+}
+
+li .add-to-cart:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 0%;
+    right: 50px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #05366e;
+    box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.back-to-top-open {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.back-to-top i {
+    font-size: 20px;
+}
+

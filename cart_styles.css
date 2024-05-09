@@ -1,0 +1,232 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #495057;
+}
+
+a {
+    text-decoration: none;
+}
+/* Thanh menu */
+.main-header {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_input {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    gap: 80px;
+}
+
+.input_search {
+    display: flex;
+    border: 1px solid #0671ec;
+    height: 35px;
+    padding: 0 0 0 10px ;
+}
+
+.cart {
+    position: absolute;
+}
+
+.number {
+    position: absolute;
+    top: 12px;
+    right: 92px;
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+    padding: 0px 3px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.cart_product_list {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.input_search input, .btn {
+    outline: none;
+    border: none;
+}
+
+.input_search input {
+    width: 300px;
+    font-size: 15px;
+}
+
+.input_search .btn {
+    width: 50px;
+    background-color: #0671ec;
+    color: #fff;
+}
+
+.input_search .btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.input_search .btn:active {
+    opacity: 1;
+}
+
+.cart img {
+    width: 30px;
+}
+/* Content Product List */
+.main-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    gap: 40px;
+}
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+    font-size: 20px;
+}
+
+tr {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.tr-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: 0.5s;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main-content img {
+    width: 120px;
+}
+
+.delete button {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #d40a0a;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.delete button:hover {
+    opacity: 0.8;
+}
+
+.delete button:active {
+    opacity: 1;
+}
+
+tbody tr:hover {
+    background-color: #d4f7f7;
+}
+
+.input-quantity {
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    color: #0553ad;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-left: 1px solid #0671ec;
+    border-right: 1px solid #0671ec;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    padding: 0 150px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.payment button {
+    display: flex;
+    background-color: #0671ec;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 32px;
+    border: none;
+}
+
+.payment button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.payment button:active {
+    opacity: 1;
+}
+
+
+.quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #0671ec;
+    float: left;
+    
+}
+
+.down-number, .up-number {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+.down-number:active,
+.up-number:active {
+    box-shadow: 0 0 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.down-number-hidden {
+    height: 30px;
+    width: 30px;
+    background-color: #949292;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
